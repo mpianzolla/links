@@ -1,0 +1,46 @@
+# GitHub Pages Redirect System
+
+Sistema de redirección para links de afiliación en emails.
+
+## ¿Qué hay aquí?
+
+- ✅ Archivos HTML de redirección listos para GitHub Pages
+- ✅ Script generador de nuevos redirects
+- ✅ Página index con lista de links
+
+## Setup Rápido
+
+1. **Crear repo en GitHub:**
+   - Nombre: `links`
+   - Público
+   - No inicializar con README
+
+2. **Subir archivos:**
+   ```bash
+   cd github-redirect
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/TU-USUARIO/links.git
+   git push -u origin main
+   ```
+
+3. **Activar GitHub Pages:**
+   - Settings → Pages
+   - Source: main branch
+   - Save
+
+4. **URLs disponibles:**
+   ```
+   https://TU-USUARIO.github.io/links/bbva.html
+   https://TU-USUARIO.github.io/links/tarjeta.html
+   ```
+
+## Editar URLs destino
+
+Abre `bbva.html` o `tarjeta.html` y cambia:
+```html
+<meta http-equiv="refresh" content="0;url=TU-URL-DE-AFILIACION">
+```
+
+Ver README.md completo para más detalles.
